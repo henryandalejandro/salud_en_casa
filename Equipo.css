@@ -1,0 +1,116 @@
+/* Sección hero */
+.hero-section {
+    background: url('./IMG/imagen\ de\ portada.jpg') no-repeat center center/cover; 
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    color: white;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Sección equipo */
+.equipo-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.equipo-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+.equipo-section .intro-text {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.team-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    max-width: 150px;
+}
+
+.team-card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.team-card .role {
+    font-size: 1.2rem;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.team-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Botón de inicio */
+.btn-home {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-home:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
