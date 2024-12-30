@@ -1,25 +1,31 @@
-// Animación para el botón de WhatsApp
-document.querySelector('.btn-whatsapp').addEventListener('click', () => {
-    alert('Gracias por contactarnos. ¡Te estamos redirigiendo a nuestra linea de Whatsapp!');
+document.addEventListener('DOMContentLoaded', function () {
+    // Función para alternar el dropdown
+    function toggleDropdown(id) {
+        var dropdown = document.getElementById(id);
+        dropdown.style.display = (dropdown.style.display === 'block') ? 'none' : 'block';
+    }
+
+    // Cerrar el dropdown cuando se haga clic fuera de él
+    window.onclick = function (event) {
+        if (!event.target.matches('.nav-button')) {
+            var dropdowns = document.getElementsByClassName("dropdown");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.style.display === 'block') {
+                    openDropdown.style.display = 'none';
+                }
+            }
+        }
+    }
+
+    // Agregar evento de mouseover para abrir el dropdown al pasar el cursor
+    var navItems = document.getElementsByClassName('nav-item');
+    for (var i = 0; i < navItems.length; i++) {
+        navItems[i].addEventListener('mouseover', function () {
+            this.getElementsByClassName('dropdown')[0].style.display = 'block';
+        });
+        navItems[i].addEventListener('mouseout', function () {
+            this.getElementsByClassName('dropdown')[0].style.display = 'none';
+        });
+    }
 });
-
-
-function toggleDropdown(menuId) {
-    const dropdown = document.getElementById(menuId);
-    const isVisible = dropdown.style.display === 'block';
-
-    // Cierra cualquier otro dropdown abierto
-    document.querySelectorAll('.dropdown').forEach(menu => menu.style.display = 'none');
-
-    // Alterna la visibilidad del menú seleccionado
-    dropdown.style.display = isVisible ? 'none' : 'block';
-}
-
-function loadHTML(file, elementId) {
-    fetch(file)
-        .then(response => response.text())
-        .then(data => document.getElementById(elementId).innerHTML = data);
-}
-// Cargar el header y el footer
-loadHTML('header.html', 'header');
-loadHTML('footer.html', 'footer');
