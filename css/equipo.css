@@ -1,6 +1,6 @@
 /* Sección hero */
 .hero-section {
-    background: url('./images/imagen\ de\ portada.jpg') no-repeat center center/cover;
+    background: url('../images/imagen\ de\ portada.jpg') no-repeat center center/cover;
     height: 60vh;
     display: flex;
     justify-content: center;

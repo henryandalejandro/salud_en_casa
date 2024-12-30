@@ -1,5 +1,5 @@
 /* Estilos generales */
-* {
+body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -11,12 +11,12 @@
 .hero {
     background: url('../images/imagen de portada.jpg') no-repeat center center/cover;
     height: 90vh;
-    color: #2471A3;
+    color: #384840;
     display: flex;
     justify-content: left;
     align-items: center;
     text-align: left;
-    padding: 10%;
+    padding: 5%;
     position: relative;
     overflow: hidden;
     /* height: 90vh */
@@ -31,7 +31,7 @@
     left: 0;
     width: 100vw;
     height: 90vh;
-    background: rgba(0, 0, 0, 0.103);
+    background: rgba(0, 0, 0, 0.219);
     z-index: 1;
     /* max-height: none; */
 }
@@ -67,7 +67,7 @@
 
 .btn-hero {
     padding: 15px 30px;
-    background: #5DADE2;
+    background: #3498DB;
     color: white;
     text-decoration: none;
     border-radius: 50px;
@@ -78,7 +78,7 @@
 }
 
 .btn-hero:hover {
-    background: #3498DB;
+    background: #0365d6de;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
     transform: scale(1.05);
 }
@@ -203,7 +203,7 @@
 .nav-button {
     background: none;
     color: white;
-    font-size: 16px;
+    font-size: 24px;
     border: none;
     cursor: pointer;
     padding: 10px 20px;
@@ -218,7 +218,7 @@
 .dropdown {
     display: none;
     position: absolute;
-    top: 40px;
+    /* top: 40px; */
     left: 0;
     background: white;
     list-style: none;
@@ -235,7 +235,7 @@
 .dropdown li a {
     text-decoration: none;
     color: #333;
-    font-size: 14px;
+    font-size: 20px;
     transition: color 0.3s ease;
 }
 
