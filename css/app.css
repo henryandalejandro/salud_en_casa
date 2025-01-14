@@ -192,7 +192,7 @@ body {
 .navbar {
     display: flex;
     justify-content: space-around;
-    background-color: #0366d6;
+    /* background-color: #0365d6c9; */
     /* padding: 5px; */
 }
 
@@ -243,7 +243,7 @@ body {
 }
 
 .footer {
-    background-color: #333;
+    background-color: #0366d6;
     color: white;
     text-align: center;
     padding: 20px;
@@ -346,5 +346,292 @@ body {
     .card {
         width: 90%;
         margin: 10px auto;
+    }
+}
+
+/*boton solicitud de servicos  */
+/* From Uiverse.io by mobinkakei */ 
+.cta {
+    display: flex;
+    padding: 11px 33px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    background: #6225e6;
+    transition: 1s;
+    box-shadow: 6px 6px 0 black;
+    transform: skewX(-15deg);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .cta:focus {
+    outline: none;
+  }
+  
+  .cta:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 #fbc638;
+  }
+  
+  .cta .second {
+    transition: 0.5s;
+    margin-right: 0px;
+  }
+  
+  .cta:hover .second {
+    transition: 0.5s;
+    margin-right: 45px;
+  }
+  
+  .span {
+    transform: skewX(15deg);
+  }
+  
+  .second {
+    width: 20px;
+    margin-left: 30px;
+    position: relative;
+    top: 12%;
+  }
+  
+  .one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+  }
+  
+  .two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+  }
+  
+  .cta:hover .three {
+    animation: color_anim 1s infinite 0.2s;
+  }
+  
+  .cta:hover .one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+  }
+  
+  .cta:hover .two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+  }
+  
+  @keyframes color_anim {
+    0% {
+      fill: white;
+    }
+  
+    50% {
+      fill: #fbc638;
+    }
+  
+    100% {
+      fill: white;
+    }
+  }
+  
+  a {
+    text-decoration: none; /* Elimina el subrayado */
+    outline: none; /* Elimina el borde azul al hacer clic */
+  }
+
+
+  /* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F6F9; /* Fondo suave para mayor confort */
+    color: #333;
+}
+
+header {
+    background-color: #002079e8; /* Color verde suave, asociado con salud */
+    padding: 20px 0;
+    color: white;
+}
+
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-button {
+    background-color: #003779e4; /* Botón verde más oscuro */
+    color: white;
+    font-size: 16px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #257ce6b8; /* Color más oscuro al pasar el ratón */
+    transform: scale(1.05); /* Efecto de agrandar */
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 45px;
+    background-color: #2548e6df;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.nav-item:hover .dropdown {
+    display: block;
+}
+
+.dropdown li {
+    padding: 10px 20px;
+}
+
+.dropdown li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.dropdown li a:hover {
+    background-color: #001f4d;
+}
+
+/* Estilo del footer */
+footer {
+    background-color: #258fe6ba;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #B2DFDB;
+}
+
+/* Estilos para botones de contacto */
+.contact-button {
+    background-color: #FF9800; /* Color llamativo */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #F57C00; /* Color más oscuro */
+}
+
+/* Estilo para el formulario de contacto */
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #DDD;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #009688;
+    outline: none;
+}
+
+/* Estilos para la sección de salud */
+.section-header {
+    font-size: 28px;
+    color: #009688;
+    text-align: center;
+    margin: 40px 0;
+    font-weight: bold;
+}
+
+.section-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.section-content .card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.section-content .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: 85c1e9;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: 85c1e9;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .section-content {
+        grid-template-columns: 1fr;
     }
 }

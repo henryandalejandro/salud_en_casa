@@ -5,18 +5,23 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+
 }
 
 /* Hero Section */
 .mision {
-    height: 60vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     position: relative;
     color: white;
+    padding: 5%;
     background: url('../images/imagen de portada.jpg') no-repeat center center/cover;
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-attachment: fixed; /* Hace que la imagen de fondo se mantenga fija al hacer scroll */
     /* border: black solid 3px; */
 }
 
@@ -34,7 +39,8 @@ body {
 .mision-content {
     position: relative;
     z-index: 2;
-    max-width: 800px;
+    max-width: 50vw;
+
 }
 
 .mision-content h1 {
@@ -90,7 +96,7 @@ body {
 
 /* Sección visión */
 .vision-section {
-    padding: 50px;
+    /* padding: 50px; */
     text-align: center;
     background-color: #f4f4f4;
 }
