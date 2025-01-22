@@ -17,7 +17,6 @@ body {
     position: relative;
     color: white;
     background: url('../images/imagen de portada.jpg') no-repeat center center/cover;
-    /* border: black solid 3px; */
 }
 
 .mision::before {
@@ -85,8 +84,6 @@ body {
 .btn-primary-custom:hover {
     background: #024a94;
 }
-
-/* vision */
 
 /* Sección visión */
 .vision-section {

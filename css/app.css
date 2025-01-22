@@ -19,9 +19,6 @@ body {
     padding: 5%;
     position: relative;
     overflow: hidden;
-    /* height: 90vh */
-
-    /* border: 1px black solid; */
 }
 
 .hero::before {
@@ -33,15 +30,12 @@ body {
     height: 90vh;
     background: rgba(0, 0, 0, 0.219);
     z-index: 1;
-    /* max-height: none; */
 }
 
 .hero-content {
     position: relative;
     z-index: 2;
     max-width: 50vw;
-    /* width: 95%; */
-    /* border: 1px black solid; */
 }
 
 .hero-content h1 {
@@ -52,7 +46,6 @@ body {
     line-height: 1.2;
     display: flex;
     justify-content: left;
-    /* width: 800px; */
 }
 
 .hero-content p {
@@ -62,12 +55,11 @@ body {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: left;
-    /* width: 900px; */
 }
 
 .btn-hero {
     padding: 15px 30px;
-    background: #3498DB;
+    background: #007BFF;
     color: white;
     text-decoration: none;
     border-radius: 50px;
@@ -79,8 +71,9 @@ body {
 
 .btn-hero:hover {
     background: #0365d6de;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
     transform: scale(1.05);
+    font-size: 1.35rem;
 }
 
 /* Servicios Section */
@@ -193,7 +186,6 @@ body {
     display: flex;
     justify-content: space-around;
     background-color: #0366d6;
-    /* padding: 5px; */
 }
 
 .nav-item {
@@ -247,7 +239,6 @@ body {
     color: white;
     text-align: center;
     padding: 20px;
-    /* position: fixed; */
     width: 100%;
 }
 
