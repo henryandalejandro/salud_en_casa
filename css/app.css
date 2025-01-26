@@ -8,7 +8,17 @@ body {
 }
 
 /* Navbar */
+
+.icono {
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    cursor: pointer;
+}
+
 .navbar {
+    padding: 0;
+    /* margin: 0; */
     display: flex;
     justify-content: space-around;
     background-color: rgb(223, 223, 223);
@@ -20,7 +30,7 @@ body {
 
 .nav-button {
     background: none;
-    color: black;
+    color: #024a94;
     font-size: 20px;
     border: none;
     cursor: pointer;
@@ -31,6 +41,7 @@ body {
 
 .nav-button:hover {
     background-color: #024a94;
+    color: white;
 }
 
 .dropdown {
