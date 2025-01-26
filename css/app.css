@@ -7,6 +7,59 @@ body {
     box-sizing: border-box;
 }
 
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(223, 223, 223);
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-button {
+    background: none;
+    color: black;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #024a94;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    background: white;
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.dropdown li {
+    padding: 5px 10px;
+}
+
+.dropdown li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.dropdown li a:hover {
+    color: #0366d6;
+}
+
 /* Hero Section */
 .hero {
     background: url('../images/imagen de portada.jpg') no-repeat center center/cover;
@@ -179,59 +232,6 @@ body {
 .whatsapp-float:hover {
     transform: scale(1.1);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-/* Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-around;
-    background-color: #0366d6;
-}
-
-.nav-item {
-    position: relative;
-}
-
-.nav-button {
-    background: none;
-    color: white;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-    padding: 5px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.nav-button:hover {
-    background-color: #024a94;
-}
-
-.dropdown {
-    display: none;
-    position: absolute;
-    left: 0;
-    background: white;
-    list-style: none;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-}
-
-.dropdown li {
-    padding: 5px 10px;
-}
-
-.dropdown li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 20px;
-    transition: color 0.3s ease;
-}
-
-.dropdown li a:hover {
-    color: #0366d6;
 }
 
 .footer {
